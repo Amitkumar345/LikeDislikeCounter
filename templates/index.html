@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src = "{% static 'script.js' %}"></script>
+    <title> Like & Dislike Count</title>
+</head>
+<body onload = "onLoad()">
+    <div class="center-screen">
+        <div class = "grp">
+            <h2 id = "like-count">
+                {% comment %} like count value {% endcomment %}
+            </h2>
+            <button id="like-btn" class="button" onclick = "incrementLikeCountandSetView()">
+                {% comment %} like emoji {% endcomment %}
+                <span class="emoji">&#x1F44D</span>
+            </button>
+        </div>
+        <div class = "grp">
+            <h2 id = "dislike-count">
+                {% comment %} dislike count value {% endcomment %}
+            </h2>
+            <button id="dislike-btn" class="button" onclick = "incrementDislikeCountandSetView()">
+                {% comment %} dislike emoji {% endcomment %}
+                <span class="emoji">&#x1F44E</span>
+            </button>
+        </div>
+        
+        <div class = "grp">
+            <button class="button" onclick = "resetData()">
+                <b><h2 class = "text-btn">RESET</h2></b>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

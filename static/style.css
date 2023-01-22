@@ -1,0 +1,47 @@
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.button {
+  background-color: white;
+  border: 0ch;
+  width: fit-content;
+  height: fit-content;
+}
+
+.emoji {
+  border-radius: 10px;
+  padding: 5px 5px 10px 5px;
+  background-color: blue;
+  font-size: 50px;
+  margin: 0 10px 0 10px;
+}
+
+.emoji:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.grp {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-btn{
+  background-color: blue;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 50px;
+}
+
+.text-btn:hover {
+  cursor: pointer;
+  background-color: black;
+}
